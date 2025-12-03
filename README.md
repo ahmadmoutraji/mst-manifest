@@ -1,7 +1,3 @@
-# mst-manifest
+# Supported
 
-This repo contain manifest to build the Yocto BSP.
-
-# Available Branches
-
-- walnascar
+* reaspberry pi 4
