@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="walnascar"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+        fetch="git://git.yoctoproject.org"/>
+
+  <project name="poky"
+        remote="yocto"
+        revision="refs/tags/yocto-5.2.4"
+        upstream="walnascar"
+        path="sources/poky"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+        fetch="git://git.openembedded.org"/>
+
+  <project name="meta-openembedded"
+        remote="oe"
+        revision="07330a98cf93806b7a4e0170a541b94962ff3960"
+        upstream="walnascar"
+        path="sources/meta-openembedded"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+        remote="yocto"
+        revision="5c540d5447fba8b652c8778af30e605242df650c"
+        upstream="walnascar"
+        path="sources/meta-raspberrypi"/>
+
+  <!-- MST -->
+  <remote name="mst"
+        fetch="https://github.com/ahmadmoutraji"/>
+  <project name="meta-mst"
+        remote="mst"
+        revision="66b4549c1c690c028cb6446216dcc2ba52eaf9d3"
+        upstream="develop"
+        path="sources/meta-mst">
+        <linkfile dest="init-build-env.sh" src="scripts/init-build-env.sh"/>
+  </project>          
+
+</manifest>
