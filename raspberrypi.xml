@@ -35,7 +35,7 @@
   <project name="meta-mst"
         remote="mst"
         revision="66b4549c1c690c028cb6446216dcc2ba52eaf9d3"
-        upstream="develop"
+        upstream="walnascar"
         path="sources/meta-mst">
         <linkfile dest="init-build-env.sh" src="scripts/init-build-env.sh"/>
   </project>          
