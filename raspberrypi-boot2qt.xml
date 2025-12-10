@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="raspberrypi.xml"/>
+
+  <project name="meta-virtualization"
+        remote="yocto"
+        revision="898239e810acbb7db93299f20deec8afe434f11b"
+        upstream="walnascar"
+        path="sources/meta-virtualization"/>
+
+<!-- Clang -->
+  <remote name="kraj"
+        fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+        remote="kraj"
+        revision="003cba92e982bdd565a6889f28799f8bba14957e"
+        upstream="walnascar"
+        path="sources/meta-clang"/>
+
+  <project name="meta-mingw"
+        remote="yocto"
+        revision="refs/tags/yocto-5.2.4"
+        upstream="walnascar"
+        path="sources/meta-mingw"/>
+
+<!-- Boot to Qt -->
+  <remote name="qt"
+        fetch="git://code.qt.io/yocto"
+        pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+        fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+        remote="qt"
+        revision="69ad718f56f9738ffb4251cbf0caeb96d889f0e3"
+        upstream="walnascar"
+        path="sources/meta-boot2qt"/>
+
+<!-- Qt -->
+  <project name="meta-qt6"
+        remote="qt"
+        revision="refs/tags/v6.10.1"
+        upstream="6.10.1"
+        path="sources/meta-qt6"/>           
+
+</manifest>
