@@ -27,7 +27,7 @@
         fetch="https://github.com/ahmadmoutraji"/>
   <project name="meta-mst"
         remote="mst"
-        revision="b777556eae8f9ec42b36438e0c058bd73396461e"
+        revision="884c7f01d79bec22c5f05ebbe6b105425247afb0"
         upstream="walnascar"
         path="sources/meta-mst">
         <linkfile dest="init-build-env.sh" src="scripts/init-build-env.sh"/>
