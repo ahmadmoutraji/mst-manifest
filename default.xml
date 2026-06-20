@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default upstream="walnascar"/>
+  <default upstream="scarthgap"/>
 
   <!-- Yocto -->
   <remote name="yocto"
-        fetch="git://git.yoctoproject.org"/>
+        fetch="https://git.yoctoproject.org"/>
 
   <project name="poky"
         remote="yocto"
-        revision="refs/tags/yocto-5.2.4"
-        upstream="walnascar"
+        revision="36687ffb9c8bd156e24e6d1a8c4ac53e40f2c557"
+        upstream="scarthgap"
         path="sources/poky"/>
 
   <!-- OpenEmbedded -->
   <remote name="oe"
-        fetch="git://git.openembedded.org"/>
+        fetch="https://git.openembedded.org"/>
 
   <project name="meta-openembedded"
         remote="oe"
-        revision="07330a98cf93806b7a4e0170a541b94962ff3960"
-        upstream="walnascar"
+        revision="b0c2c648a1af89e7a8dd4c2ec841f3bc0ed0ccb9"
+        upstream="scarthgap"
         path="sources/meta-openembedded"/>
 
   <!-- MST -->
@@ -27,8 +27,8 @@
         fetch="https://github.com/ahmadmoutraji"/>
   <project name="meta-mst"
         remote="mst"
-        revision="884c7f01d79bec22c5f05ebbe6b105425247afb0"
-        upstream="walnascar"
+        revision="d2f711692c3e3b79742e23dd11b4df68c203c8ce"
+        upstream="scarthgap"
         path="sources/meta-mst">
         <linkfile dest="init-build-env.sh" src="scripts/init-build-env.sh"/>
   </project>          

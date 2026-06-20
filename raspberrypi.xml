@@ -5,8 +5,8 @@
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
         remote="yocto"
-        revision="5c540d5447fba8b652c8778af30e605242df650c"
-        upstream="walnascar"
+        revision="167703d5618498bb7feeaedf18e61be7a8246d1b"
+        upstream="scarthgap"
         path="sources/meta-raspberrypi"/>     
 
 </manifest>
